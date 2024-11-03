@@ -195,6 +195,128 @@ int[] oneArr = {1,0,5,6,0,0,0,9,6,3};
 
 
 
+
+
+// find the largest number in an array
+
+int[]  largestNumberElement = {1,2,3,4,5,6,8,44,22};
+    int largestNum = Integer.MIN_VALUE;
+    for(int i = 0; i < largestNumberElement.length - 1; i++){
+        if(largestNumberElement[i] > largestNum ){
+            largestNum = largestNumberElement[i];
+        }
+    }
+
+    System.out.println("\nLargest Number: "+ largestNum);
+
+
+    
+
+
+
+
+
+
+
+
+// Check if Array Contains a Specific Element
+
+    int[] getSpecificEle = {2,4,56,787,22,34,78,87,32};
+
+        int thisEle = 56;
+        for(int i  = 0; i < getSpecificEle.length; i++){
+            if(getSpecificEle[i] == thisEle){
+                System.out.println("At Index "+(i+1)+" "+thisEle+" Found");
+            }
+        }
+
+
+
+// Check if an Array is Sorted
+
+    int[] checkSorted = {1,2,3,4,5,6,7};
+        boolean flag = true;
+        for(int i = 0 ; i < checkSorted.length -1; i++){
+            if(checkSorted[i] > checkSorted[i+1]){
+                flag = false;
+                break;  
+            }
+        }
+        System.out.println("Sorted Array? "+flag);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Remove Duplicate from a sorted array.
+
+    int[] DuplicateArray = {1,1,1,3,4,5,6,7,7,8,8,9,10,9};
+
+        int[] nonDuplicateArray = new int[DuplicateArray.length];
+        int StoredEle = 0;
+        int indexVal = 0;
+        for(int i  = 0; i < DuplicateArray.length; i++){
+            
+            if(StoredEle != DuplicateArray[i]){
+                StoredEle = DuplicateArray[i];
+                nonDuplicateArray[indexVal] = StoredEle;
+                indexVal++;
+            }
+        }
+
+        for(int nonDEle : nonDuplicateArray){
+            System.out.print(nonDEle+" ");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Find Missing Numbers
+
+    int[] findMissing = {1,2,4,5,6};
+
+        int missingSum = 0;
+        for(int i = 0; i < findMissing.length; i++){
+            missingSum += findMissing[i];
+        }
+        
+        int missingTotalRange = 0;
+
+        for(int i = findMissing[0]; i <= findMissing[findMissing.length-1]; i++){
+            missingTotalRange += i;
+        }
+
+        System.out.println("\n"+(missingTotalRange-missingSum));
+
+
+
+
+
+
+
+
+
+
+
+
+
        
        }
     }

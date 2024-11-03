@@ -11,10 +11,14 @@
             "id": "7107c32808614c70",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Tricks to Find Complexity.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Tricks to Find Complexity"
             }
           }
         ]
@@ -154,11 +158,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7107c32808614c70",
+  "active": "804dc892a40bb2dd",
   "lastOpenFiles": [
+    "Tricks to Find Complexity.md",
+    "Week-1 ExcaleDraw Link.md",
     "Abstract Data Types",
     "New folder",
-    "Tricks to Find Complexity.md",
     "Designing Algorithms.md",
     "Pasted image 20241016130324.png",
     "Pasted image 20241016130211.png",
