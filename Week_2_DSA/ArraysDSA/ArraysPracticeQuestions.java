@@ -313,6 +313,113 @@ int[]  largestNumberElement = {1,2,3,4,5,6,8,44,22};
 
 
 
+// Find the minium Element of Array.
+
+int[] minArr = {3,4,1,2};
+
+
+    int minElement = Integer.MAX_VALUE;
+    for(int i  = 0; i < minArr.length; i++){
+        if(minArr[i] < minElement){
+            minElement = minArr[i];
+        }
+    }
+    System.out.println("Minimum Element of Array is: "+minElement);
+
+
+
+
+
+
+
+
+    
+
+//Count the number of even and odd elements in an array.
+
+int[] oddEvenArr = {1,1,1,1,1,1,1,1};
+
+    int oddCount = 0;
+    int evenCount = 0;
+    for(int i = 0; i < oddEvenArr.length; i++){
+        if(oddEvenArr[i]%2 == 0){
+            evenCount++;
+        }
+        else if(oddEvenArr[i]%2 != 0){
+            oddCount++;
+        }
+    }
+    System.out.println("ODD: "+oddCount+" EVEN: "+evenCount);
+
+
+
+
+//Print the elements of an array in alternate positions.
+
+int[] alternateArr = {1,2,3,4,5,6,7,8,9};
+
+    for(int i  =0; i< alternateArr.length; i++){
+        System.out.println(alternateArr[i]);
+        i++;
+    }
+
+
+//Find the second smallest element in an array
+
+int[] secondSmallestArr = {5,6,1,8,9,4,3};
+
+    int smallestVal = Integer.MAX_VALUE;
+    int secondSmallestVal = Integer.MAX_VALUE;
+    for(int i  =0 ; i< secondSmallestArr.length; i++){
+        if(secondSmallestArr[i] < smallestVal){
+                secondSmallestVal = smallestVal;
+                smallestVal = secondSmallestArr[i];
+            }
+        else if (secondSmallestArr[i] < secondSmallestVal && secondSmallestArr[i] != smallestVal) {
+        secondSmallestVal = secondSmallestArr[i];
+    }
+    }
+
+    System.out.println("Second Smallest Value is : "+ secondSmallestVal);
+
+
+
+
+
+
+
+
+
+
+
+
+//Merge two sorted arrays
+
+int[] mergeSortedArr1 = {55, 200, 400, 500, 600};
+int[] mergeSortedArr2 = {350, 450, 550};
+
+int[] mergedSortedArray = new int[mergeSortedArr1.length + mergeSortedArr2.length];
+int index1 = 0, index2 = 0;
+
+// Merging process
+for (int i = 0; i < mergedSortedArray.length; i++) {
+    if (index1 < mergeSortedArr1.length && (index2 >= mergeSortedArr2.length || mergeSortedArr1[index1] < mergeSortedArr2[index2])) {
+        mergedSortedArray[i] = mergeSortedArr1[index1++];
+    } else {
+        mergedSortedArray[i] = mergeSortedArr2[index2++];
+    }
+}
+
+// Printing the merged sorted array
+for (int sortedElement : mergedSortedArray) {
+    System.out.print(sortedElement+" ");
+}
+
+
+
+
+
+
 
 
 
