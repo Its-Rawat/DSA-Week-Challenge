@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "624d7cb18ffad980",
+        "id": "5f71921325f4642f",
         "type": "tabs",
         "children": [
           {
-            "id": "d9f226a1bd794734",
+            "id": "cac1d5d319443baf",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Pointers in Java- 2.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Pointers in Java- 2"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Pointers in Java- 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Pointers in Java- 2"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Pointers in Java- 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Pointers in Java- 2"
             }
           },
           {
@@ -133,9 +139,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "Pointers in Java- 2.md"
+              },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Pointers in Java- 2"
             }
           }
         ]
@@ -155,6 +163,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d9f226a1bd794734",
-  "lastOpenFiles": []
+  "active": "cac1d5d319443baf",
+  "lastOpenFiles": [
+    "Code/SinglyLinkedList/Node.class",
+    "Code/SinglyLinkedList/Main.class",
+    "Code/SinglyLinkedList/Node.java",
+    "Code/SinglyLinkedList/Main.java",
+    "Code/SinglyLinkedList/SinglyLinkedList1_.class",
+    "Code/SinglyLinkedList/SinglyLinkedList1_.java",
+    "Code/SinglyLinkedList/SinglyLinkedList2_.java",
+    "Code/SinglyLinkedList",
+    "Code/SinglyLinkedList2_.java",
+    "Code/LinkedList1_.java",
+    "Code",
+    "Pasted image 20241116161425.png",
+    "LinkedList-1.md",
+    "Pointers in Java- 2.md"
+  ]
 }
