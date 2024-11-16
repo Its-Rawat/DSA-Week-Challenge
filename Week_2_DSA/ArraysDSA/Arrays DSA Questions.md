@@ -190,3 +190,63 @@ for(int newEle : arrs){
 ### Time Complexity
 ![[Pasted image 20241026182908.png]]
 
+
+```
+  
+
+//Merge two sorted arrays
+
+  
+
+int[] mergeSortedArr1 = {55, 200, 400, 500, 600};
+
+int[] mergeSortedArr2 = {350, 450, 550};
+
+  
+
+int[] mergedSortedArray = new int[mergeSortedArr1.length + mergeSortedArr2.length];
+
+int p1 = 0, p2 = 0, p3 = 0;
+
+// Step 1: run loop until one Array Exhausts
+
+while(p1 < mergeSortedArr1.length && p2 < mergeSortedArr2.length){
+
+    if(mergeSortedArr1[p1] < mergeSortedArr2[p2]){
+
+        mergedSortedArray[p3++] = mergeSortedArr1[p1++];
+
+    }else{
+
+        mergedSortedArray[p3++] = mergeSortedArr2[p2++];
+
+    }
+
+}
+
+// add all elements from non-exhausted Array to mergedSortedArray.
+
+while(p1 < mergeSortedArr1.length){
+
+    mergedSortedArray[p3++] = mergeSortedArr1[p1++];
+
+}
+
+while(p2 < mergeSortedArr2.length){
+
+    mergedSortedArray[p3++] = mergeSortedArr1[p2++];
+
+}
+
+  
+
+for(int mergedArr : mergedSortedArray){
+
+    System.out.print(mergedArr+" ");
+
+}
+```
+![[Pasted image 20241108161401.png]]
+
+
+![[Pasted image 20241109121149.png]]
