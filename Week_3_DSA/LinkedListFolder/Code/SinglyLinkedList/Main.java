@@ -10,5 +10,7 @@ class Main{
         // System.out.println("Node2 Data: "+node2.data);
         System.out.println("Node2 Next: "+node1.next.data);
 
+
+        
     }
 }

@@ -2,6 +2,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 
@@ -711,6 +712,44 @@ Find the missing number in an array of size  n  containing elements from  1  to 
 // Output: 4 (sequence: 1, 2, 3, 4)
 
 
+    int[] longestConsecutiveSeq = {100, 4, 200, 1, 3, 2};
+    
+        Arrays.sort(longestConsecutiveSeq);
+        List<Integer> storeSeq1 = new ArrayList<>();
+        List<Integer> storeSeq2 = new ArrayList<>();
+        List<Integer> finalList = new ArrayList<>();
+
+        
+        for(int w = 0; w < longestConsecutiveSeq.length-1; w++){
+
+            if(longestConsecutiveSeq[w] + 1  == longestConsecutiveSeq[w+1]){
+                storeSeq1.add(longestConsecutiveSeq[w]);
+                storeSeq1.add(longestConsecutiveSeq[w+1]);
+                if(storeSeq1.size() > storeSeq2.size()){
+                     List<Integer> uniqueList = storeSeq1.stream()
+                                       .distinct()
+                                       .collect(Collectors.toList());
+                    finalList.clear();
+                    finalList.addAll(uniqueList);
+                    // System.out.println("Longest: "+uniqueList);
+
+                }else{
+                    List<Integer> uniqueList2 = storeSeq2.stream()
+                                       .distinct()
+                                       .collect(Collectors.toList());
+                    finalList.clear();
+                    finalList.addAll(uniqueList2);
+                    // System.out.println("Longest: "+uniqueList2);
+                }
+            }
+            else{
+                storeSeq2.addAll(storeSeq1);
+                storeSeq1.clear();
+            }
+            
+        }
+
+        System.out.println("Longest: "+finalList);
 
 
 
@@ -721,6 +760,35 @@ Find the missing number in an array of size  n  containing elements from  1  to 
 
 
 
+
+
+
+
+
+
+// Find the longest consecutive sequence in an array.
+// Input: [100, 4, 200, 1, 3, 2]
+// Output: 4 (sequence: 1, 2, 3, 4)
+
+
+    int[] findLongestSeq = {1, 2, 2, 3, 4};
+
+        Arrays.sort(findLongestSeq);// 1,2,3,4,100,200
+
+        int lastSmallest = Integer.MIN_VALUE;
+        int longestEle = 1;
+        int current = 0;
+        for(int q = 0; q < findLongestSeq.length - 1; q++){
+            if(findLongestSeq[q]+1 == findLongestSeq[q+1]){
+                longestEle++;
+                lastSmallest = findLongestSeq[q];
+                // if(lastSmallest != findLongestSeq[q]){
+                //     current++;
+                // }
+                
+            }
+        }
+        System.out.println("Longest Seq is: "+longestEle);
 
 
 
