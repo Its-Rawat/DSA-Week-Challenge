@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Pointers in Java- 2"
             }
+          },
+          {
+            "id": "ab9e719d1c9c4321",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.6"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.6"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -163,7 +176,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cac1d5d319443baf",
+  "active": "ab9e719d1c9c4321",
   "lastOpenFiles": [
     "Code/SinglyLinkedList/Node.class",
     "Code/SinglyLinkedList/Main.class",
