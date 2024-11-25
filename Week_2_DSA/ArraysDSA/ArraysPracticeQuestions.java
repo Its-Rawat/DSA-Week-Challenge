@@ -781,14 +781,44 @@ Find the missing number in an array of size  n  containing elements from  1  to 
         for(int q = 0; q < findLongestSeq.length - 1; q++){
             if(findLongestSeq[q]+1 == findLongestSeq[q+1]){
                 longestEle++;
-                lastSmallest = findLongestSeq[q];
-                // if(lastSmallest != findLongestSeq[q]){
-                //     current++;
-                // }
-                
             }
         }
         System.out.println("Longest Seq is: "+longestEle);
+
+
+
+
+
+
+
+
+
+
+
+
+// Sliding Window Basic
+    // Find greatest Consecutive Numbers.
+
+    int[] maxSumSubArray = {100,200,300,400};
+
+        int K = 2;
+        
+        int finalMaxSum = Integer.MIN_VALUE;
+        for(int q = 0; q < maxSumSubArray.length - K + 1; q++){
+            int maxSum = 0;
+            for(int f = q; f <= q + K - 1; f++){
+                maxSum += maxSumSubArray[f];
+            }    
+            finalMaxSum = Math.max(finalMaxSum, maxSum);
+        }
+        System.out.println("Max Sum of this Array is : "+ finalMaxSum);
+
+
+
+
+
+
+
 
 
 

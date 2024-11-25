@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ArraysDSA/Arrays DSA Questions.md",
+                "file": "ArraysDSA/Asterisk Problems.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Arrays DSA Questions"
+              "title": "Asterisk Problems"
             }
           }
         ],
@@ -179,6 +179,13 @@
   },
   "active": "c90616d6f24c44da",
   "lastOpenFiles": [
+    "Pasted image 20241123230419.png",
+    "Pasted image 20241123230406.png",
+    "Pasted image 20241123230347.png",
+    "ArraysDSA/2_ 50 Array Practice Questions.pdf",
+    "ArraysDSA/Asterisk Problems.md",
+    "ArraysDSA/Arrays Define.md",
+    "ArraysDSA/Arrays DSA Questions.md",
     "Pasted image 20241109121149.png",
     "Pasted image 20241108161401.png",
     "Week-2 Link ExcaleDraw Link.md",
@@ -186,25 +193,20 @@
     "Abstract-Data-Type-Array/ArrrayADT.java",
     "Abstract-Data-Type-Array/Define.md",
     "Abstract-Data-Type-Array",
-    "ArraysDSA/Arrays DSA Questions.md",
-    "ArraysDSA/Arrays Define.md",
     "Pasted image 20241026182908.png",
     "Pasted image 20241026171106.png",
     "Pasted image 20241026164940.png",
     "Pasted image 20241026155152.png",
     "Pasted image 20241026122755.png",
     "Pasted image 20241026121010.png",
-    "Pasted image 20241026114043.png",
     "ArraysDSA/ArraysPracticeQuestions.class",
     "ArraysDSA/ArraysPracticeQuestions.java",
     "List_Questions/Solutions/Basic List Operations.md",
     "List_Questions/Questions on List.md",
     "List_Questions/Solutions",
     "List_Questions",
-    "Pasted image 20241023014330.png",
     "ArraysDSA/Basics.class",
     "ArraysDSA/Basics.java",
-    "ArraysDSA",
     "Abstract Data Types/Define.md",
     "Week_2_DSA_Notes/Abstract Data Types.md"
   ]

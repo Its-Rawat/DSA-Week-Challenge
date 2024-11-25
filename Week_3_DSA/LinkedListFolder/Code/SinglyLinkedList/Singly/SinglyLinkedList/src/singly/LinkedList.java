@@ -100,14 +100,33 @@ public class LinkedList {
     				System.out.println("Position out of Bond");
     				return;
     			}
-    		temp.Next = temp.Next.Next;
-    		
-    		
-    		
+    		temp.Next = temp.Next.Next;		
     	}
     	
     // Search Element
     
+    	public void searchElement(String element) {
+    		if(head == null) {
+    			System.out.println("LinkedList is Empty!!");
+    			return;
+    		}
+    		if(head.Data == element) {
+    			System.out.println("Element Found at Node 1: "+head.Data);
+    			return;
+    		}
+    		Node temp = head;
+    		while(temp.Data != element && temp.Next != null) {
+    			temp = temp.Next;
+    		}
+    		if(temp.Data == element) {
+    			System.out.println("Element Found at Node 1: "+temp.Data);
+    			return;
+    		}else {
+    			System.out.println("Element Not in The LinkedList!!");
+    		}
+    	}
+    	
+    	
     
 
         public void printData(){

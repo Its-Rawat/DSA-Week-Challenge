@@ -19,7 +19,7 @@ public class Main {
 		
 //		linklist.deleteFromN(1);
 		
-		
+		linklist.searchElement("Aayush");
 		
 		linklist.printData();
 	}
